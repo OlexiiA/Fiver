@@ -44,13 +44,12 @@ const Skills = () => {
           <img className="h-10" src={selectSkill?.logo} alt="..." />
           <h6>{selectSkill?.name}</h6>
         </div>
-        
+
         <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7" >
           <li>I regularly familiarize myself with best practice recommendations to stay abreast of current trends.</li>
-          <li>I devote a lot of time to honing my programming skills, but I also make time for other interests.</li>
-          <li>I strive to write clean and understandable code that would be easy to maintain and expand.</li>
+          <li>I devote a lot of time to honing my skills, but I also make time for other interests.</li>
         </ul>
-       
+
         <div className="flex justify-end">
           <button onClick={closeModal} className="btn">Close</button>
         </div>
@@ -65,7 +64,7 @@ const Skills = () => {
       <div className="flex flex-wrap gap-4 justify-center ">
         {skills.skills_content.map((skill, i) => (
           <div
-          data-aos="fade-up" data-aos-delay={i * 400}
+            data-aos="fade-up" data-aos-delay={i * 400}
             key={i}
             className="bg-white sm:cursor-pointer relative group w-full flex items-center gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
           >
